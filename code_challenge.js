@@ -53,7 +53,9 @@ console.log(pangram('The quick brown fox jumps over the lazy dog'))
 //longest word
 function longest(arr){
     //sorry no time but
-    let maxlength = Math.max(arr[0].length, arr[1].length)
+    let wordlengths = arr.map(element => element.length)
+    console.log(wordlengths)
+    let maxlength = Math.max(...wordlengths)
     return maxlength
 }
 
